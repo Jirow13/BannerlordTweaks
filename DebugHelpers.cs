@@ -5,7 +5,7 @@ using System.Windows.Forms;
 using TaleWorlds.Core;
 
 namespace BannerlordTweaks {
-    public static class Helpers {
+    public static class DebugHelpers {
         [Conditional("DEBUG")]
         public static void DebugMessage(string message) {
             Message(message);

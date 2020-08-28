@@ -3,7 +3,7 @@ using MCM.Abstractions.Attributes.v2;
 using MCM.Abstractions.Settings.Base.Global;
 
 namespace BannerlordTweaks {
-    public class Settings : AttributeGlobalSettings<Settings> {
+    public class BannerlordTweaksSettings : AttributeGlobalSettings<BannerlordTweaksSettings> {
         public override string Id => "BannerlordTweaksSettings";
         public override string DisplayName => "Bannerlord Tweaks Settings";
         public override string FolderName => "BannerlordTweaksSettings";
