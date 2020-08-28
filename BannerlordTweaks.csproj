@@ -3,7 +3,7 @@
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(SolutionDir)\BannerlordTweaks.props" />
   <PropertyGroup>
-    <MNB2DIR>B:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord</MNB2DIR>
+    <MNB2DIR>E:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</MNB2DIR>
     <MOD_ID>BannerlordTweaks</MOD_ID>
     <MOD_OUTDIR>$(MOUNT_AND_BLADE_DIR)\Modules</MOD_OUTDIR>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -49,11 +49,11 @@
   <ItemGroup>
     <Reference Include="0Harmony, Version=2.0.2.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>packages\Lib.Harmony.2.0.2\lib\net472\0Harmony.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Bannerlord.ButterLib, Version=1.0.3.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>packages\Bannerlord.ButterLib.1.0.3\lib\net472\Bannerlord.ButterLib.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Bannerlord.UIExtenderEx, Version=1.0.2.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>packages\Bannerlord.UIExtenderEx.1.0.2\lib\net472\Bannerlord.UIExtenderEx.dll</HintPath>
@@ -61,7 +61,7 @@
     </Reference>
     <Reference Include="MCMv4, Version=4.0.2.0, Culture=neutral, PublicKeyToken=null">
       <HintPath>packages\Bannerlord.MCM.4.0.2\lib\net472\MCMv4.dll</HintPath>
-      <Private>True</Private>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
       <HintPath>packages\Microsoft.Bcl.HashCode.1.1.0\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
