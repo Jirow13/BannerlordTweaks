@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using ModLib;
 using SandBox.ViewModelCollection.Tournament;
 using System;
 using System.Linq;

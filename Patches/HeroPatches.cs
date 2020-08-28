@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using ModLib.Debugging;
 using System;
 using System.Reflection;
 using TaleWorlds.CampaignSystem;
@@ -41,7 +40,7 @@ namespace BannerlordTweaks.Patches
             }
             catch (Exception ex)
             {
-                ModDebug.ShowError($"An exception occurred whilst trying to apply the hero xp multiplier.", "", ex);
+                Helpers.ShowError("An exception occurred whilst trying to apply the hero xp multiplier.", "", ex);
             }
             return false;
         }

@@ -1,5 +1,4 @@
 ﻿using HarmonyLib;
-using ModLib;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,7 +21,6 @@ namespace BannerlordTweaks
             {
                 try
                 {
-                    FileDatabase.Initialise(ModuleFolderName);
                     harmony = new Harmony("mod.bannerlord.mipen");
                     harmony.PatchAll();
 
