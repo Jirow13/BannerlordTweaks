@@ -1,6 +1,8 @@
 ﻿using Helpers;
 using System;
+using System.Windows.Forms;
 using System.Linq;
+using TaleWorlds.Core;
 using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.SandBox.GameComponents;
 
@@ -67,6 +69,7 @@ namespace BannerlordTweaks
 
             return num;
         }
+				
 
         private bool IsHeroAgeSuitableForPregnancy(Hero hero)
         {
