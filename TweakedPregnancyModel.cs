@@ -44,13 +44,13 @@ namespace BannerlordTweaks
             float num = 0f;
             if (!BannerlordTweaksSettings.Instance.PlayerCharacterFertileEnabled && HeroIsMainOrSpouseOfMain(hero))
             {
-                DebugHelpers.Message("Hero: " + hero.Name + "PlayerCharacterFertileEnabled Check - num = " + num);
+                DebugHelpers.DebugMessage("Hero: " + hero.Name + " PlayerCharacterFertileEnabled Check - num = " + num);
                 return num;
             }
 
             if (BannerlordTweaksSettings.Instance.MaxChildrenTweakEnabled && hero.Children != null && hero.Children.Any() && hero.Children.Count >= BannerlordTweaksSettings.Instance.MaxChildren)
             {
-                DebugHelpers.Message("Hero: " + hero.Name + "MaxChildrenTweakEnabled Check - num = " + num);
+                DebugHelpers.DebugMessage("Hero: " + hero.Name + " MaxChildrenTweakEnabled Check - num = " + num);
                 return num;
             }
 
