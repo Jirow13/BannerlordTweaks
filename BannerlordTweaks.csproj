@@ -5,7 +5,7 @@
   <PropertyGroup>
     <!-- Get this from Props file or define here <MNB2DIR>[path]</MNB2DIR> -->
     <!-- <MNB2DIR>D:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord</MNB2DIR> -->
-	<MNB2DIR>E:\GOGLibrary\Bannerlord\Mount &amp; Blade II Bannerlord</MNB2DIR>
+    <MNB2DIR>E:\GOGLibrary\Bannerlord\Mount &amp; Blade II Bannerlord</MNB2DIR>
     <MOD_ID>BannerlordTweaks</MOD_ID>
     <MOD_FOLDER>$(MNB2DIR)\Modules\zz$(MOD_ID)\</MOD_FOLDER>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -63,7 +63,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-  <!-- Bannerlord Native Assemblies -->
+    <!-- Bannerlord Native Assemblies -->
     <Reference Include="$(MNB2DIR)\bin\Win64_Shipping_Client\TaleWorlds*.dll">
       <HintPath>%(Identity)</HintPath>
       <Private>False</Private>
