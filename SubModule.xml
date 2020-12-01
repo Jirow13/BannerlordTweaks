@@ -7,6 +7,7 @@
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
   	<Official value="false"/>
+	<Url value="https://www.nexusmods.com/mountandblade2bannerlord/mods/2036" />
 	<DependedModules>
 		<DependedModule Id="Native"/>
 		<DependedModule Id="SandBoxCore"/>
