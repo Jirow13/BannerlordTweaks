@@ -354,7 +354,7 @@ namespace BannerlordTweaks
 
         #region Party Tweaks - Army Tweaks
 
-        [SettingPropertyBool("All-Clan Armies Lose No Coehsion", Order = 1, RequireRestart = false, HintText = "Armies composed of only clan parties lose no coehsion."), SettingPropertyGroup("Party Tweaks/Army Tweaks")]
+        [SettingPropertyBool("All-Clan Armies Lose No Cohesion", Order = 1, RequireRestart = false, HintText = "Armies composed of only clan parties lose no cohesion."), SettingPropertyGroup("Party Tweaks/Army Tweaks")]
         public bool ClanArmyLosesNoCohesionEnabled { get; set; } = false;
 
         #endregion

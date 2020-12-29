@@ -5,16 +5,8 @@ using StoryMode.StoryModePhases;
 
 namespace BannerlordTweaks
 {
-	//internal class TweakedConspiracyBehavior : CampaignBehaviorBase
 	public class ConspiracyQuestTimerTweak
 	{
-		/*
-		public override void RegisterEvents()
-		{
-			CampaignEvents.DailyTickEvent.AddNonSerializedListener(this, new Action(this.ExtendDeadline));
-		}
-		*/
-
 		public static void Apply(Campaign campaign)
 		{
 			var obj = new ConspiracyQuestTimerTweak();
@@ -43,10 +35,7 @@ namespace BannerlordTweaks
 						float cStrngth = SecondPhase.Instance.ConspiracyStrength;
 						if (cStrngth > 1000 && cStrngth > 250)
                         {
-							SecondPhase.Instance.DecreaseConspiracyStrength();
-							SecondPhase.Instance.DecreaseConspiracyStrength();
-							SecondPhase.Instance.DecreaseConspiracyStrength();
-							SecondPhase.Instance.DecreaseConspiracyStrength();
+							SecondPhase.Instance.DecreaseConspiracyStrength(150);
 							DebugHelpers.ColorGreenMessage("BT Extend Conspiracy Tweak: Reduced conspiracy strength.");
 						}
 						
@@ -54,11 +43,5 @@ namespace BannerlordTweaks
 				}
 			}
 		}
-
-		/*
-		public override void SyncData(IDataStore dataStore)
-		{
-		}
-		*/
 	}
 }

@@ -8,8 +8,8 @@
     <ModuleName>zz$(AssemblyName)</ModuleName>
 	<!-- Set as Machine Env Variable, or define in line below -->
 	<!-- <BL_GAME_DIR>Define Path Here</BL_GAME_DIR> -->
-    <!-- <GameFolder>$(BL_GAME_DIR)</GameFolder> -->
-	<GameFolder>$(BL_GAME_DIR_GOG)</GameFolder>
+    <GameFolder>$(BL_GAME_DIR)</GameFolder>
+	<!-- <GameFolder>$(BL_GAME_DIR_GOG)</GameFolder> -->
     <Authors>Jiros</Authors>
   </PropertyGroup>
 

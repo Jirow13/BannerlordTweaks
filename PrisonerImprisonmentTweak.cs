@@ -13,7 +13,7 @@ namespace BannerlordTweaks
         public static void Apply(Campaign campaign)
         {
             if (campaign == null) throw new ArgumentNullException(nameof(campaign));
-            var escapeBehaviour = campaign.GetCampaignBehavior<PrisonerEscapeCampaignBehavior>();
+            var escapeBehaviour = campaign.GetCampaignBehavior<PrisonerReleaseCampaignBehavior>();
             if (escapeBehaviour != null && CampaignEvents.DailyTickHeroEvent != null)
             {
                 CampaignEvents.DailyTickHeroEvent.ClearListeners(escapeBehaviour);
@@ -21,7 +21,7 @@ namespace BannerlordTweaks
             }
         }
 
-        private static void Check(PrisonerEscapeCampaignBehavior escapeBehaviour, Hero hero)
+        private static void Check(PrisonerReleaseCampaignBehavior escapeBehaviour, Hero hero)
          {
             if (escapeBehaviour == null || !(BannerlordTweaksSettings.Instance is { } settings) || !hero.IsPrisoner) return;
 
@@ -41,7 +41,7 @@ namespace BannerlordTweaks
                         (int)hero.CaptivityStartTime.ElapsedDaysUntilNow > settings.MinimumDaysOfImprisonment)
                     {
                         //DebugHelpers.DebugMessage("Prisoner Tweak DailyHeroTick: [" + hero.Name + "] Escape Conditions met. Allow Escape Attempt.");
-                        typeof(PrisonerEscapeCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
+                        typeof(PrisonerReleaseCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
                         return;
                     }
                     //DebugHelpers.DebugMessage("Prisoner Tweak DailyHeroTick: [" + hero.Name + "] Escape conditions not met. No Escape attempt.");
@@ -51,7 +51,7 @@ namespace BannerlordTweaks
                 else
                 {
                     //DebugHelpers.DebugMessage("Prisoner Tweak DailyHeroTick: [" + hero.Name + "] Tweak Flag is false. Allow Escape Attmpt.");
-                    typeof(PrisonerEscapeCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
+                    typeof(PrisonerReleaseCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
                 }                
                 return;
 
@@ -59,7 +59,7 @@ namespace BannerlordTweaks
             else
             {
                 //DebugHelpers.DebugMessage("Prisoner Tweak DailyHeroTick: [" + hero.Name + "] Else Condition met. Operate as normal, allow escape attempt.");
-                typeof(PrisonerEscapeCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
+                typeof(PrisonerReleaseCampaignBehavior).GetMethod("DailyHeroTick", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(escapeBehaviour, new object[] { hero });
             }
         }
 
