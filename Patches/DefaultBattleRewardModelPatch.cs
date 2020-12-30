@@ -18,30 +18,20 @@ namespace BannerlordTweaks.Patches
             {
                 var battleRenownMultiplier = 1f;
 
-                if (BannerlordTweaksSettings.Instance.BattleRewardApplyToAI || party.LeaderHero != null && party.LeaderHero == Hero.MainHero)
+                if ( (BannerlordTweaksSettings.Instance is { } settings && party.LeaderHero != null) && (settings.BattleRewardApplyToAI || party.LeaderHero == Hero.MainHero) )
                 {
-                    battleRenownMultiplier = BannerlordTweaksSettings.Instance.BattleRenownMultiplier;
+                    battleRenownMultiplier = settings.BattleRenownMultiplier;
                 }
 
                 var stat = new ExplainedNumber((renownValueOfBattle * contributionShare) * battleRenownMultiplier, explanation);
-                /* Debug to test complaint of Battle Renown multiplier not being calculated right.
-                if (party.LeaderHero == Hero.MainHero)
-                {
-                    MessageBox.Show($"DefaultBattleRewardModelRenownPatch. renownValueOfBattle is: "+ renownValueOfBattle+"\nbattleRenownMultiplier is:" + battleRenownMultiplier + "\nexplanation:"+ explanation+"\n");
-                }
-                */
 
                 //TODO:: Implement this the same as native in next game update
                 if (party.IsMobile && party.MobileParty.HasPerk(DefaultPerks.Charm.ShowYourScars, false))
                 {
                     PerkHelper.AddPerkBonusForParty(DefaultPerks.Charm.ShowYourScars, party.MobileParty, true, ref stat);
                     // Debug
-                    // InformationManager.DisplayMessage(new InformationMessage($"DefaultBattleRewardModelRenownPatch. Show Your Scars Bonus\nHero is:"+party.LeaderHero.Name+"\nrenownValueOfBattle is: " + renownValueOfBattle + "\nbattleRenownMultiplier is:" + battleRenownMultiplier + "\nexplanation:" + explanation + "\n"));
+                    // DebugHelpers.DebugMessage($"DefaultBattleRewardModelRenownPatch. Show Your Scars Bonus\nHero is:"+party.LeaderHero.Name+"\nrenownValueOfBattle is: " + renownValueOfBattle + "\nbattleRenownMultiplier is:" + battleRenownMultiplier + "\nexplanation:" + explanation + "\n");
                 }
-
-                // Replaced with L34 'todo' method for v1.5.0
-                //if (party.IsMobile && party.Leader != null && party.Leader.HeroObject != null && party.LeaderHero.GetPerkValue(DefaultPerks.Charm.ShowYourScars))
-                //    PerkHelper.AddPerkBonusForParty(DefaultPerks.Charm.ShowYourScars, party.MobileParty, true, ref stat);
 
                 __result = stat.ResultNumber;
                 patched = true;
@@ -54,11 +44,9 @@ namespace BannerlordTweaks.Patches
             return !patched;
         }
 
-        static bool Prepare()
-        {
-            return BannerlordTweaksSettings.Instance.BattleRewardTweaksEnabled;
-        }
+        static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.BattleRewardTweaksEnabled;
     }
+
 
     [HarmonyPatch(typeof(DefaultBattleRewardModel), "CalculateInfluenceGain")]
     public class DefaultBattleRewardModelInfluencePatch
@@ -70,9 +58,10 @@ namespace BannerlordTweaks.Patches
             {
                 var battleInfluenceMultiplier = 1f;
 
-                if (BannerlordTweaksSettings.Instance.BattleRewardApplyToAI || party.LeaderHero != null && party.LeaderHero == Hero.MainHero)
+                //if (BannerlordTweaksSettings.Instance.BattleRewardApplyToAI || party.LeaderHero != null && party.LeaderHero == Hero.MainHero)
+                if ((BannerlordTweaksSettings.Instance is { } settings && party.LeaderHero != null) && (settings.BattleRewardApplyToAI || party.LeaderHero == Hero.MainHero))
                 {
-                    battleInfluenceMultiplier = BannerlordTweaksSettings.Instance.BattleInfluenceMultiplier;
+                    battleInfluenceMultiplier = settings.BattleInfluenceMultiplier;
                 }
 
                 var stat = new ExplainedNumber(party.MapFaction.IsKingdomFaction ? (influenceValueOfBattle * contributionShare * battleInfluenceMultiplier) : 0f, explanation, null);
@@ -88,9 +77,7 @@ namespace BannerlordTweaks.Patches
             return !patched;
         }
 
-        static bool Prepare()
-        {
-            return BannerlordTweaksSettings.Instance.BattleRewardTweaksEnabled;
-        }
+        static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.BattleRewardTweaksEnabled;
+
     }
 }

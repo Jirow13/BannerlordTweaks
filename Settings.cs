@@ -319,7 +319,7 @@ namespace BannerlordTweaks
         [SettingPropertyInteger("Crafting Stamina Gain", 0, 100, HintText = "Native value is 5. You gain this amount of crafting stamina per hour."), SettingPropertyGroup("Crafting Tweaks/Crafting Stamina Tweaks")]
         public int CraftingStaminaGainAmount { get; set; } = 10;
 
-        [SettingPropertyBool("Ignore Crafting Stamina", Order = 1, RequireRestart = false, HintText = "Native value is false. This disables crafting stamina completely. You will still lose crafting stamina when you craft, but you will still be able to craft when you hit zero."), SettingPropertyGroup("Crafting Tweaks/Crafting Stamina Tweaks")]
+        [SettingPropertyBool("Ignore Crafting Stamina", Order = 1, HintText = "Native value is false. This disables crafting stamina completely. You will still lose crafting stamina when you craft, but you will still be able to craft when you hit zero."), SettingPropertyGroup("Crafting Tweaks/Crafting Stamina Tweaks")]
         public bool IgnoreCraftingStamina { get; set; } = false;
 
         [SettingPropertyFloatingInteger("Crafting Stamina Gain Outside Settlement Multiplier", 0f, 1f, HintText = "Native value is 0.0. In native, you do not gain crafting stamina if you are not resting inside a settlement."), SettingPropertyGroup("Crafting Tweaks/Crafting Stamina Tweaks")]

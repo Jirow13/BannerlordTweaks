@@ -8,24 +8,24 @@ namespace BannerlordTweaks
     {
         public override float GetConstructionProgressPerHour(SiegeEngineType type, SiegeEvent siegeEvent, ISiegeEventSide side, StatExplainer? explanation = null)
         {
-            if (BannerlordTweaksSettings.Instance.SiegeConstructionProgressPerDayMultiplierEnabled)
-                return base.GetConstructionProgressPerHour(type, siegeEvent, side, explanation) * BannerlordTweaksSettings.Instance.SiegeConstructionProgressPerDayMultiplier;
+            if (BannerlordTweaksSettings.Instance is { } settings && settings.SiegeConstructionProgressPerDayMultiplierEnabled)
+                return base.GetConstructionProgressPerHour(type, siegeEvent, side, explanation) * settings.SiegeConstructionProgressPerDayMultiplier;
             else
                 return base.GetConstructionProgressPerHour(type, siegeEvent, side, explanation);
         }
 
         public override float GetColleteralDamageCasualties(SiegeEngineType siegeEngineType, MobileParty party)
         {
-            if (BannerlordTweaksSettings.Instance.SiegeCasualtiesTweakEnabled)
-                return BannerlordTweaksSettings.Instance.SiegeCollateralDamageCasualties;
+            if (BannerlordTweaksSettings.Instance is { } settings && settings.SiegeCasualtiesTweakEnabled)
+                return settings.SiegeCollateralDamageCasualties;
             else
                 return base.GetColleteralDamageCasualties(siegeEngineType, party);
         }
 
         public override float GetDestructionCasualties(SiegeEngineType destroyedSiegeEngine)
         {
-            if (BannerlordTweaksSettings.Instance.SiegeCasualtiesTweakEnabled)
-                return BannerlordTweaksSettings.Instance.SiegeDestructionCasualties;
+            if (BannerlordTweaksSettings.Instance is { } settings && settings.SiegeCasualtiesTweakEnabled)
+                return settings.SiegeDestructionCasualties;
             else
                 return base.GetDestructionCasualties(destroyedSiegeEngine);
         }

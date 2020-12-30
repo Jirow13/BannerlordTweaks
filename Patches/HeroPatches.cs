@@ -29,7 +29,7 @@ namespace BannerlordTweaks.Patches
                 
                 if (hdFieldInfo == null) GetFieldInfo();
 
-                HeroDeveloper hd = (HeroDeveloper)hdFieldInfo.GetValue(__instance);
+                HeroDeveloper hd = (HeroDeveloper)hdFieldInfo!.GetValue(__instance);
 
                 if (hd != null)
                 {

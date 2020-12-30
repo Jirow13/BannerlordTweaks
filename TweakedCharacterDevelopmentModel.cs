@@ -4,12 +4,12 @@ namespace BannerlordTweaks
 {
     public class TweakedCharacterDevelopmentModel : DefaultCharacterDevelopmentModel
     {
-        public override int LevelsPerAttributePoint => BannerlordTweaksSettings.Instance.AttributeFocusPointTweakEnabled
-            ? BannerlordTweaksSettings.Instance.AttributePointRequiredLevel
+        public override int LevelsPerAttributePoint => BannerlordTweaksSettings.Instance is { } settings && settings.AttributeFocusPointTweakEnabled
+            ? settings.AttributePointRequiredLevel
             : base.LevelsPerAttributePoint;
 
-        public override int FocusPointsPerLevel => BannerlordTweaksSettings.Instance.AttributeFocusPointTweakEnabled
-            ? BannerlordTweaksSettings.Instance.FocusPointsPerLevel
+        public override int FocusPointsPerLevel => BannerlordTweaksSettings.Instance is { } settings && settings.AttributeFocusPointTweakEnabled
+            ? settings.FocusPointsPerLevel
             : base.FocusPointsPerLevel;
     }
 }

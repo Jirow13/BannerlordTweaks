@@ -16,12 +16,12 @@ namespace BannerlordTweaks
             en.Add(baseVal);
             try
             {
-                if (BannerlordTweaksSettings.Instance.SettlementMilitiaBonusEnabled)
+                if (BannerlordTweaksSettings.Instance is { } settings && settings.SettlementMilitiaBonusEnabled)
                 {
                     if (settlement.IsCastle)
-                        en.Add(BannerlordTweaksSettings.Instance.CastleMilitiaBonus, new TextObject("Recruitment drive"));
+                        en.Add(settings.CastleMilitiaBonus, new TextObject("Recruitment drive"));
                     if (settlement.IsTown)
-                        en.Add(BannerlordTweaksSettings.Instance.TownMilitiaBonus, new TextObject("Citizen militia"));
+                        en.Add(settings.TownMilitiaBonus, new TextObject("Citizen militia"));
                 }
 
             }
@@ -36,10 +36,10 @@ namespace BannerlordTweaks
         {
             base.CalculateMilitiaSpawnRate(settlement, out meleeTroopRate, out rangedTroopRate, out float _meleeEliteTroopRate, out float _rangedEliteTroopRate);
 
-            if (BannerlordTweaksSettings.Instance.SettlementMilitiaEliteSpawnRateBonusEnabled)
+            if (BannerlordTweaksSettings.Instance is { } settings && settings.SettlementMilitiaEliteSpawnRateBonusEnabled)
             {
-                _meleeEliteTroopRate += BannerlordTweaksSettings.Instance.SettlementEliteMeleeSpawnRateBonus;
-                _rangedEliteTroopRate += BannerlordTweaksSettings.Instance.SettlementEliteRangedSpawnRateBonus;
+                _meleeEliteTroopRate += settings.SettlementEliteMeleeSpawnRateBonus;
+                _rangedEliteTroopRate += settings.SettlementEliteRangedSpawnRateBonus;
             }
             meleeEliteTroopRate = _meleeEliteTroopRate;
             rangedEliteTroopRate = _rangedEliteTroopRate;

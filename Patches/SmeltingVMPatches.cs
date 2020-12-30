@@ -81,10 +81,7 @@ namespace BannerlordTweaks.Patches
             }
         }
 
-        static bool Prepare()
-        {
-            return BannerlordTweaksSettings.Instance.PreventSmeltingLockedItems;
-        }
+        static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.PreventSmeltingLockedItems;
     }
 
     [HarmonyPatch(typeof(SmeltingVM), "RefreshList")]
@@ -108,9 +105,6 @@ namespace BannerlordTweaks.Patches
             }
         }
 
-        static bool Prepare()
-        {
-            return BannerlordTweaksSettings.Instance.AutoLearnSmeltedParts;
-        }
+        static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.AutoLearnSmeltedParts;
     }
 }
