@@ -1,6 +1,8 @@
 ﻿using HarmonyLib;
 using TaleWorlds.CampaignSystem.ViewModelCollection;
 
+// Retired in 1.5.6 - Remote Companion Mgmt is part of the base game now.
+
 namespace BannerlordTweaks.Patches
 {
     [HarmonyPatch(typeof(CampaignUIHelper), "GetAddFocusHintString")]
@@ -8,7 +10,7 @@ namespace BannerlordTweaks.Patches
     {
         static void Prefix(ref bool isInSamePartyAsPlayer)
         {
-            isInSamePartyAsPlayer = true;
+            isInSamePartyAsPlayer = true; 
         }
 
         static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.RemoteCompanionSkillManagementEnabled;

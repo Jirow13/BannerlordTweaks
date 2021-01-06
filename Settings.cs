@@ -19,8 +19,10 @@ namespace BannerlordTweaks
         [SettingPropertyBool("Show Number of Days of Food", Order = 2, RequireRestart = false, HintText = "Changes the number showing how much food you have to instead show how many days' worth of food you have. (Bottom right of campaign map UI).")]
         public bool ShowFoodDaysRemaining { get; set; } = false;
 
+        /* Removed in v1.5.6 - Now part of base game.
         [SettingPropertyBool("Enable Remote Companion Skill Management", Order = 3, RequireRestart = false, HintText = "Allows you to manage your companions' skills when they are not in your party.")]
         public bool RemoteCompanionSkillManagementEnabled { get; set; } = true;
+        */
 
         [SettingPropertyBool("Enable Auto-Extenson of 'Stop the Conspiracy' Quest Timer", Order = 4, RequireRestart = false, HintText = "Automatically extends the timer of the 'Stop the Conspiracy' quest as TW hasn't finished it yet.")]
         public bool TweakedConspiracyQuestTimerEnabled { get; set; } = true;
@@ -329,7 +331,7 @@ namespace BannerlordTweaks
 
         #region Crafting Tweaks - Smelting Tweaks
 
-        [SettingPropertyBool("Hide Locked Weapons in Smelting Menu", Order = 1, RequireRestart = false, IsToggle = true, HintText = "Native value is false. Prevent weapons that you have locked in your inventory from showing up in the smelting list to prevent accidental smelting."), SettingPropertyGroup("Crafting Tweaks/Smelting Tweaks")]
+        [SettingPropertyBool("Hide Locked Weapons in Smelting Menu", Order = 1, RequireRestart = false, HintText = "Native value is false. Prevent weapons that you have locked in your inventory from showing up in the smelting list to prevent accidental smelting."), SettingPropertyGroup("Crafting Tweaks/Smelting Tweaks")]
         public bool PreventSmeltingLockedItems { get; set; } = false;
 
 
@@ -445,6 +447,20 @@ namespace BannerlordTweaks
 
         [SettingPropertyInteger("Prisoner Size Bonus", 0, 500, Order = 1, RequireRestart = false, HintText = "Adds a flat % bonues to your party's maximum prisoner size. 10% = 10, +50% = 50, etc. [Native is 0]"), SettingPropertyGroup("Prisoner Tweaks/Prisoner Size Tweak")]
         public float PrisonerSizeTweakPercent { get; set; } = 0;
+
+        [SettingPropertyBool("Enable Prisoner Confirmity Tweaks", Order = 1, RequireRestart = false, IsToggle = true, HintText = "Modifies the conformity rate of the base game, speeding/slowing the rate at which prisoners can be recruited"), SettingPropertyGroup("Prisoner Tweaks/Prisoner Confirmity Tweaks")]
+        public bool PrisonerConformityTweaksEnabled { get; set; } = false;
+
+        [SettingPropertyFloatingInteger("Prisoner Confirmity Bonus", 0f, 10f, Order = 1, RequireRestart = false, HintText = "Adds a flat % bonues to the conformity generated each hour. 10% = .1, +50% = .5, etc. [Native is 0]"), SettingPropertyGroup("Prisoner Tweaks/Prisoner Confirmity Tweaks")]
+        public float PrisonerConformityTweakBonus { get; set; } = 0;
+
+        [SettingPropertyBool("Apply Prisoner Confirmity Tweaks to Clan", Order = 1, RequireRestart = false, HintText = "Applies Prisoner Conformity Tweaks to all clan parties as well."), SettingPropertyGroup("Prisoner Tweaks/Prisoner Confirmity Tweaks")]
+        public bool PrisonerConformityTweaksApplyToClan { get; set; } = false;
+
+        [SettingPropertyBool("Apply Prisoner Confirmity Tweaks to AI", Order = 1, RequireRestart = false, HintText = "Applies Prisoner Conformity Tweaks to all parties, including AI lords as well."), SettingPropertyGroup("Prisoner Tweaks/Prisoner Confirmity Tweaks")]
+        public bool PrisonerConformityTweaksApplyToAi { get; set; } = false;
+
+
 
         #endregion
 

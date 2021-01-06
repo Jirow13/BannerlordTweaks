@@ -4,6 +4,8 @@ using TaleWorlds.CampaignSystem;
 using TaleWorlds.CampaignSystem.ViewModelCollection.CharacterDeveloper;
 using TaleWorlds.Core;
 
+// Retired in 1.5.6 - Remote Companion Mgmt is part of the base game now.
+
 namespace BannerlordTweaks.Patches
 {
     [HarmonyPatch(typeof(CharacterAttributeItemVM), MethodType.Constructor)]

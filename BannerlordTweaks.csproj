@@ -20,6 +20,10 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
@@ -53,9 +57,13 @@
 
   <ItemGroup>
     <Compile Remove="DismembermentMissionBehaviour.cs" />
+    <Compile Remove="Patches\CampaignUIHelperPatch.cs" />
+    <Compile Remove="Patches\CharacterAttributeItemVMPatch.cs" />
+    <Compile Remove="Patches\CharacterVMPatch.cs" />
     <Compile Remove="Patches\DefaultTroopCountLimitModelPatch.cs" />
     <Compile Remove="Patches\HearthLevelPatch-WIP.cs" />
     <Compile Remove="Patches\MapVMPatches.cs" />
+    <Compile Remove="Patches\SkillVMPatch.cs" />
     <Compile Remove="Properties\AssemblyInfo.cs" />
   </ItemGroup>
 
