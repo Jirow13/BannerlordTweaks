@@ -1,0 +1,425 @@
+﻿Misceleneous Tweaks
+
+[list]
+[b][*]Disable Quest Troops Affecting Morale[/b]  -When enabled, quest troops such as 'Borrowed Troop' in your party are ignored when party morale is calculated.
+
+[b][*]Show Number of Days of Food[/b]  -Changes the number showing how much food you have to instead show how many days' worth of food you have. (Bottom right of campaign map UI).
+
+[b][*]Enable Remote Companion Skill Management[/b]  -Allows you to manage your companions' skills when they are not in your party.
+
+[b][*]Enable Auto-Extenson of 'Stop the Conspiracy' Quest Timer[/b]  -Automatically extends the timer of the 'Stop the Conspiracy' quest as TW hasn't finished it yet.
+[/list]
+
+
+[list]
+[b][*]Battle Tweaks/Battle Reward Tweaks  -  Battle Reward Tweaks[/b]  -Applies the set multiplier to renown and influence gain from battles (applies to the player only).
+
+[b][*]Battle Tweaks/Battle Reward Tweaks  -  Battle Renown Multiplier[/b]  -Native value is 1.0. The amount of renown you receive from a battle is multiplied by this value.
+
+[b][*]Battle Tweaks/Battle Reward Tweaks  -  Battle Influence Multiplier[/b]  -Native value is 1.0. The amount of influence you receive from a battle is multiplied by this value.
+
+[b][*]Battle Tweaks/Battle Reward Tweaks  -  Aso Apply To AI[/b]  -Applies the renown and influence multipliers to AI parties.
+
+
+[b][*]Battle Tweaks/Hideout Tweaks  -  Enable Hideout Battle Behavior[/b]  -Changes game behavior inside hideout battles.
+
+[b][*]Battle Tweaks/Hideout Tweaks  -  Battle Tweaks/Hideout Battle Troop Limit[/b]  -Native value is 9 or 10. Changes the maximum troop limit to the set value inside hideout battles. Cannot be higher than 90 because it causes bugs.
+
+[b][*]Battle Tweaks/Hideout Tweaks  -  Continue Hideout Battle On Player Death[/b]  -Native value is false. If enabled, you will not automatically lose the hideout battle if you die. Your troops will charge and the boss duel will be disabled.
+
+[b][*]Battle Tweaks/Hideout Tweaks  -  Continue Battle On Losing Duel[/b]  -Native value is false. If enabled, you will lose the battle if you lose the boss duel. If disabled, your troops will rush to avenge you and finish everyone off.
+
+
+[b][*]Battle Tweaks/Siege Tweaks  -  Enable Siege Tweaks[/b]  -Enable Siege Tweaks.
+
+
+[b][*]Battle Tweaks/Siege Tweaks/Construction Progress Tweak  -  Enable Siege Construction Progress Tweak[/b]  -Adds a multiplier to the construction progress per day for sieges.
+
+[b][*]Battle Tweaks/Siege Tweaks/Construction Progress Tweak  -  Siege Construction Progress Per Day Multiplier[/b]  -Native value is 1.0. Adds a multiplier to the construction progress per day for sieges. A smaller number results in longer siege times.
+
+
+[b][*]Battle Tweaks/Siege Tweaks/Casualties Tweaks  -  Enable Siege Casualties Tweaks[/b]  -Changes the values used to calculate casualties during the siege stage on the campaign map.
+
+[b][*]Battle Tweaks/Siege Tweaks/Casualties Tweaks  -  Siege Collateral Damage Casualties[/b]  -Native value is 2.0. Changes the value used to calculate collateral casualties during the campaign map siege stage.
+
+[b][*]Battle Tweaks/Siege Tweaks/Casualties Tweaks  -  Siege Destruction Casualties[/b]  -Native value is 5.0. Changes the value used to calculate desctruction casualties during the campaign map siege stage.
+
+
+[b][*]Battle Tweaks/Troop Battle Experience Tweaks  -  Enable Troop Battle Experience Multiplier[/b]  -Multiplies the amount of experience that ALL troops receive during battles (Note: Only troops, not heroes).
+
+[b][*]Battle Tweaks/Troop Battle Experience Tweaks  -  Troop Battle Experience Modifier[/b]  -Native value is 1.0. Multiplies the amount of experience that ALL troops receive during fought battles (Note: Only troops, not heroes. Does not apply to simulated battles.).
+
+[b][*]Battle Tweaks/Troop Battle Experience Tweaks/Simulation Experience Tweak  -  Enable Troop Battle Simulation Experience Multiplier[/b]  -Provides a multiplier to experience gained from simulated battles. This is applied to all fights (including NPC fights) on the campaign map.
+
+[b][*]Battle Tweaks/Troop Battle Experience Tweaks/Simulation Experience Tweak  -  Troop Battle Simulation Experience Multiplier[/b]  -Native value is 1.0. Provides a multiplier to experience gained from simulated battles. This is applied to all simulated fights on the campaign map.
+
+[b][*]Battle Tweaks/Weapon Cut Through Tweaks  -  All Two-Handed Weapons Cut Through[/b]  -Allows all two-handed weapon types to cut through and hit multiple people.
+
+[b][*]Battle Tweaks/Weapon Cut Through Tweaks  -  All One-Handed Weapons Cut Through[/b]  -Allows all single-handed weapon types to cut through and hit multiple people.
+[/list]
+
+
+[list]
+[b][*]Campaign Tweaks/Difficulty Tweaks  -  Enable Difficulty Tweaks[/b]  -Allows you to change the difficulty settings. These override the options in the game's settings menu.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Player Tweak  -  Enable Damage to Player Tweak[/b]  -Allows you to change the multiplier for damage the player receives.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Player Tweak  -  Damage to Player Tweak Multiplier[/b]  -Native values: Very Easy: 0.3, Easy: 0.67, Realistic: 1. This value is used to calculate the damage player receives.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Friends Tweak  -  Enable Damage to Friends Tweak[/b]  -Allows you to change the damage the player's friends receive.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Friends Tweak  -  Damage to Friends Tweak Multiplier[/b]  -Native values: Very Easy: 0.3, Easy: 0.67, Realistic: 1. This value is used to calculate the damage the player's friends receive.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Player's Troops Tweak  -  Enable Damage to Player's Troops Tweak[/b]  -Allows you to change the multiplier for damage the player's troops receive.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Damage to Player's Troops Tweak  -  Damage to Troops Tweak Multiplier[/b]  -Native values: Very Easy: 0.3, Easy: 0.67, Realistic: 1. This value is used to calculate the damage to the player's troops.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Combat AI Difficulty Tweak  -  Enable Combat AI Difficulty Tweak[/b]  -Allows you to change the AI combat difficulty.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Combat AI Difficulty Tweak  -  Combat AI Difficulty Tweak Multiplier[/b]  -Native values: Very Easy: 0.1, Easy: 0.32, Realistic: 0.96. This value is used to calculate AI combat difficulty.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Player Map Movement Speed Bonus Tweak  -  Enable Player Map Movement Speed Tweak[/b]  -Allows you to change the bonus map movement speed multiplier the player receives.
+
+[b][*]Campaign Tweaks/Difficulty Tweaks/Player Map Movement Speed Bonus Tweak  -  Player Map Movement Tweak Multiplier[/b]  -Native values: Very Easy: 0.1, Easy: 0.05, Realistic: 0. This value is used to calculate player's map movement speed.
+
+[b][*]Campaign Tweaks/Battle Size Tweak  -  Battle Size Tweak[/b]  -Allows you to set the battle size limit outside of native values. WARNING: Setting this above 1000 can cause performance degradation and crashes.
+
+[b][*]Campaign Tweaks/Battle Size Tweak  -  Battle Size Limit[/b]  -Sets the limit for number of troops on a battlefield. WARNING: Setting this above 1000 can cause performance degradation and crashes.
+[/list]
+
+
+[list]
+[b][*]Character Tweaks/Age Tweaks  -  Enable Age Tweaks[/b]  -Enables the tweaking of character age behaviour.
+
+[b][*]Character Tweaks/Age Tweaks  -  Become Infant Age[/b]  -Native: 3. Must be less than Become Child Age.
+
+[b][*]Character Tweaks/Age Tweaks  -  Become Child Age[/b]  -Native: 6. Must be less than Become Teenager Age.
+
+[b][*]Character Tweaks/Age Tweaks  -  Become Teenager Age[/b]  -Native: 14. Must be less than Hero Comes Of Age.
+
+[b][*]Character Tweaks/Age Tweaks  -  Hero Comes Of Age[/b]  -Native: 18. Must be less than Become Old Age.
+
+[b][*]Character Tweaks/Age Tweaks  -  Become Old Age[/b]  -Native: 47. Must be less than Max Age.
+
+[b][*]Character Tweaks/Age Tweaks  -  Max Age[/b]  -Native: 125.
+
+
+
+[b][*]Character Tweaks/Attribute-Focus Points Tweaks  -  Enable Attribute-Focus Point Tweaks[/b]  -Changes the values used to calculate how many Attribute and Focus points Heroes gain.
+
+
+[b][*]Character Tweaks/Attribute-Focus Points Tweaks  -  Levels To Gain For Attribute Points[/b]  -Native value is 4. How many levels you need to gain to receive an attribute point.
+
+
+[b][*]Character Tweaks/Attribute-Focus Points Tweaks  -  Focus Point Per Level[/b]  -Native value is 1. This is the amount of focus points earned per level.
+
+
+
+[b][*]Character Tweaks/Hero Skill Experience Multiplier  -  Enable Hero Skill Experience Multiplier[/b]  -Applies a multiplier to the amount of experience recieved for skills. Affects the player only. 1.0 = No Bonus. 1.1 = 10%, etc.
+
+[b][*]Character Tweaks/Hero Skill Experience Multiplier  -  Enable Companion Skill Experience Multiplier[/b]  -Applies a multiplier to the amount of experience recieved for skills. Affects Compaions only. 1.0 = No Bonus. 1.1 = 10%, etc.
+
+[b][*]Character Tweaks/Hero Skill Experience Multiplier  -  Hero Skill Experience Multiplier[/b]  -Applies a multiplier to the amount of experience recieved for skills. Affects the player only.
+
+[b][*]Character Tweaks/Hero Skill Experience Multiplier  -  Companion Skill Experience Multiplier[/b]  -Applies a multiplier to the amount of experience recieved for skills. Affects the Companion only.
+
+
+
+[b][*]Character Tweaks/Pregnancy Tweaks  -  Disable Stillbirths[/b]  -Disables the chance of children dying when born.
+
+[b][*]Character Tweaks/Pregnancy Tweaks  -  Disable Maternal Mortality[/b]  -Disables the chance of mothers dying when giving birth.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Duration Tweak  -  Enable Pregnancy Duration Tweak[/b]  -Allows for adjusting the duration for a pregnancy.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Duration Tweak  -  Pregnancy Duration[/b]  -Native value is 36 days.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Female Offspring Probability Tweak  -  Enable Gender Ratio Tweak[/b]  -Allows for adjusting the gender ratio of births.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Female Offspring Probability Tweak  -  Probability for female children[/b]  -Native value is 0.51. Set to -1 to disable female births.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Twins Probability Tweak  -  Enable Twins Probability Tweak[/b]  -Allows for adjusting the chance of giving birth to twins.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Twins Probability Tweak  -  Probability to deliver twins[/b]  -Native value is 0.03. Determines the chance of giving birth to twins.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks  -  Enable Pregnancy Chance Tweaks[/b]  -Enabling this will completely override the daily pregnancy check. All settings below will be applied!
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks  -  Player is Fertile[/b]  -Native: true. If set to false, the player will not be able to have children.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks  -  Min Pregnancy Age[/b]  -Native: 18. Minimum age that someone can get pregnant.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks  -  Max Pregnancy Age[/b]  -Native: 45. Maximum age that someone can get pregnant.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks/Clan Fertility Bonus  -  Enable Clan Fertility Bonus[/b]  -Enable a bonus to your clan members to become pregnant.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks/Clan Fertility Bonus  -  Clan Fertility Bonus[/b]  -Adds a % bonus to your clan members to become pregnant. 1 = No Bonus, 2 = 2x chance, 5 = 5x chance. Note: May not do much after ~6-8 kids due to the base pregnancy calculations.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks/Max Children Tweak  -  Enable Max Children Tweak[/b]  -Native: false. Sets the maximum number of children that someone can have.
+
+[b][*]Character Tweaks/Pregnancy Tweaks/Pregnancy Chance Tweaks/Max Children Tweak  -  Max Children[/b]  -Default: 5. Maximum number of children that someone can have.
+[/list]
+
+
+[list]
+[b][*]Clan Tweaks/Companion Limit Tweak  -  Enable Companion Limit Tweak[/b]  -Sets the base companion limit and the bonus gained per clan tier.
+
+[b][*]Clan Tweaks/Companion Limit Tweak  -  Base Companion Limit[/b]  -Native value is 3. Sets the base companion limit.
+
+[b][*]Clan Tweaks/Companion Limit Tweak  -  Companion Limit Bonus Per Clan Tier[/b]  -Native value is 1. Sets the bonus to companion limit per clan tier. This value is multiplied by your clan tier. Note that Leadership 'We Pledge Our Swords' perk will also increae this number by 1.
+
+[b][*]Clan Tweaks/Clan Parties Tweak  -  Enable Clan Parties Tweak[/b]  -Changes the base number of parties you can field and the bonus gained per clan tier.
+
+[b][*]Clan Tweaks/Clan Parties Tweak  -  Base Clan Parties Limit[/b]  -Native value is 1. This is the base number of parties you can field.
+
+[b][*]Clan Tweaks/Clan Parties Tweak  -  Clan Parties Bonus Per Clan Tier[/b]  -Native has a calculation for this: 1 party for under tier 3, 2 parties for under tier 5, 3 parties for over tier 5. This setting is multiplied by your clan tier. A value of 0.5 will equate to 1 extra party per 2 clan tiers, which eqautes to the same as native.
+
+[b][*]Clan Tweaks/Clan Parties Tweak/AI Lord Parties Tweak  -  Enable AI Clan Parties Tweak[/b]  -Changes the base number of parties AI Lords can field.
+
+[b][*]Clan Tweaks/Clan Parties Tweak/AI Lord Parties Tweak  -  Also Adjust Minor Factions[/b]  -Changes the base number of parties AI Minor Factiopn Lords can field. [Native is 1-4, depending on Clan tier.]
+
+[b][*]Clan Tweaks/Clan Parties Tweak/AI Lord Parties Tweak  -  Add to AI Clan Parties Limit[/b]  -This adds to the the base number of parties AI Lords can field. [Native is 1 for Tier 3 and below, 2 at T4, 3 at T5 and up.] Minor Factions are not included unless the option below is also enabled.
+
+[b][*]Clan Tweaks/Clan Parties Tweak/Custom Spawn Parties Tweak  -  Adjust Custom Spawn Parties[/b]  -Changes the base number of parties Custom Spawn lords can field. [Native is 1-4, depending on Clan tier.]
+
+[b][*]Clan Tweaks/Clan Parties Tweak/Custom Spawn Parties Tweak  -  Add to Custom Spawn Parties Limit[/b]  -This adds to the the base number of parties Custom Lords can field. [Native is 1 for Tier 3 and below, 2 at T4, 3 at T5 and up.] Minor Factions are not included unless the option below is also enabled.
+[/list]
+
+
+[list]
+[b][*]Crafting Tweaks/Crafting Stamina Tweaks  -  Crafting Stamina Tweaks[/b]  -Enables tweaks which affect crafting stamina.
+
+[b][*]Crafting Tweaks/Crafting Stamina Tweaks  -  Max Crafting Stamina[/b]  -Native value is 400. Sets the maximum crafting stamina value.
+
+[b][*]Crafting Tweaks/Crafting Stamina Tweaks  -  Crafting Stamina Gain[/b]  -Native value is 5. You gain this amount of crafting stamina per hour.
+
+[b][*]Crafting Tweaks/Crafting Stamina Tweaks  -  Ignore Crafting Stamina[/b]  -Native value is false. This disables crafting stamina completely. You will still lose crafting stamina when you craft, but you will still be able to craft when you hit zero.
+
+[b][*]Crafting Tweaks/Crafting Stamina Tweaks  -  Crafting Stamina Gain Outside Settlement Multiplier[/b]  -Native value is 0.0. In native, you do not gain crafting stamina if you are not resting inside a settlement.
+
+
+
+[b][*]Crafting Tweaks/Smelting Tweaks  -  Hide Locked Weapons in Smelting Menu[/b]  -Native value is false. Prevent weapons that you have locked in your inventory from showing up in the smelting list to prevent accidental smelting.
+
+
+[b][*]Crafting Tweaks/Smelting Tweaks  -  Enable Unlocking Parts From Smelted Weapons[/b]  -Native value is false. Unlock the parts that a weapon is made of when you smelt it.
+[/list]
+
+
+[list]
+[b][*]Kingdom Tweaks/Lord Bartering Tweaks  -  Bartering Tweaks[/b]  -Enables tweaks which affect bartering (Marriage, Factions Joining You, etc.)
+
+[b][*]Kingdom Tweaks/Lord Bartering Tweaks  -  Faction Joining Barter Adjustment[/b]  -Adjust the % cost of swaying a fatcion to join your kingdom. Native value is 100% (no change). 50 = 50% reduction in cost. 150 = 50% increase in cost, etc.
+
+[b][*]Kingdom Tweaks/Lord Bartering Tweaks  -  Use Alternate Formula for Faction Joining Barter[/b]  -Applies alternate formula for calculating cost of swaying a faction to join your kingdom, with more emphasis on relationsip. [The higher your relationship to the lord, the cheaper the barter].
+[/list]
+
+
+[list]
+[b][*]Party Tweaks/Army Tweaks  -  All-Clan Armies Lose No Cohesion[/b]  -Armies composed of only clan parties lose no cohesion.
+
+
+[b][*]Party Tweaks/Caravan Party Size Tweak  -  Enable Player Caravan Party Size Tweak[/b]  -Applies a configured value to your caravan party size
+
+[b][*]Party Tweaks/Caravan Party Size Tweak  -  Player Caravan Party Size[/b]  -Native: 30. Be aware that bigger parties are also slower parties.
+
+
+[b][*]Party Tweaks/Party Size Bonus  -  Enable Party Size Bonus[/b]  -Applies a bonues to your party size based on your leadership and steward skills.
+
+[b][*]Party Tweaks/Party Size Bonus  -  Enable Leadership Bonus[/b]  -Applies a bonus equal to the set percentage of your leadership skill to your party size.
+
+[b][*]Party Tweaks/Party Size Bonus  -  Leadership Percentage Bonus[/b]  -Applies a bonus equal to the set percentage of your leadership skill to your party size.
+
+[b][*]Party Tweaks/Party Size Bonus  -  Enable Steward Bonus[/b]  -Applies a bonus equal to the set percentage of your steward skill to your party size.
+
+[b][*]Party Tweaks/Party Size Bonus  -  Steward Percentage Bonus[/b]  -Applies a bonus equal to the set percentage of your leadership skill to your party size.
+
+
+[b][*]Party Tweaks/Wage Tweaks  -  Enable Wage Tweaks[/b]  -Allows you to reduce/increase wages for various groups. [experimental]
+
+[b][*]Party Tweaks/Wage Tweaks  -  Party Wage Adjustment[/b]  -Adjusts party wages to a % of native value. Minimum 5% (.05), Maximum 500% (5.0) [Native: 100% (1.0)]
+
+[b][*]Party Tweaks/Wage Tweaks  -  Garrison Wage Adjustment[/b]  -Adjusts garrison wages to a % of native value. Minimum 5% (.05), Maximum 500% (5.0) [Native: 100% (1.0)]
+
+[b][*]Party Tweaks/Wage Tweaks  -  Also Apply Wage Tweaks to Your Faction[/b]  -Applies the wage adjust to your clan/faction parties as well
+
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Enable Daily Troop Experience Gain[/b]  -Gives troops in a party an amount of experience each day based upon the leader's Leadership skill. By default only applies to the player.
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Percentage of Leadership[/b]  -The percentage of the leader's Leadership skill to be given as experience to their troops.
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Apply to Player's Clan Members[/b]  -Applies the daily troop experience gain to members of the player's clan also.
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Apply to all NPC Lords[/b]  -Applies the daily troop experience gain to all NPC lords.
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Display Message[/b]  -Displays a message showing the amount of experience granted.
+
+[b][*]Party Tweaks/Troop Daily ExperienceTweak  -  Required Leadership Level[/b]  -The Leadership level required to start giving experience to troops.
+[/list]
+
+
+[list]
+[b][*]Prisoner Tweaks  -  Enable Imprisonment Period Tweak[/b]  -Adds a minimum amount of time before lords can attempt to escape imprisonment.
+
+[b][*]Prisoner Tweaks  -  Player Prisoners Only[/b]  -Whether the tweak should be applied only to prisoners held by the player.
+
+[b][*]Prisoner Tweaks  -  Minimum Days of Imprisonment[/b]  -The minimum number of days a lord will remain imprisoned before they can attempt to escape.
+
+[b][*]Prisoner Tweaks  -  Enable Missing Prisoner Hero Fix[/b]  -Will attempt to detect and release prisoner Heroes who may be bugged and do not respawn. Will trigger 3 days after the Minimum Days of Imprisonment setting.
+
+[b][*]Prisoner Tweaks/Prisoner Size Tweak  -  Enable Prisoner Size Bonus[/b]  -Enables a flat % bonus to your party's maximum prisoner size.
+
+[b][*]Prisoner Tweaks/Prisoner Size Tweak  -  Prisoner Size Bonus[/b]  -Adds a flat % bonues to your party's maximum prisoner size. 10% = 10, +50% = 50, etc. [Native is 0]
+
+[b][*]Prisoner Tweaks/Prisoner Confirmity Tweaks  -  Enable Prisoner Confirmity Tweaks[/b]  -Modifies the conformity rate of the base game, speeding/slowing the rate at which prisoners can be recruited
+
+[b][*]Prisoner Tweaks/Prisoner Confirmity Tweaks  -  Prisoner Confirmity Bonus[/b]  -Adds a flat % bonues to the conformity generated each hour. 10% = .1, +50% = .5, etc. [Native is 0]
+
+[b][*]Prisoner Tweaks/Prisoner Confirmity Tweaks  -  Apply Prisoner Confirmity Tweaks to Clan[/b]  -Applies Prisoner Conformity Tweaks to all clan parties as well.
+
+[b][*]Prisoner Tweaks/Prisoner Confirmity Tweaks  -  Apply Prisoner Confirmity Tweaks to AI[/b]  -Applies Prisoner Conformity Tweaks to all parties, including AI lords as well.
+[/list]
+
+
+[list]
+[b][*]Settlement Tweaks/Disable Troop Donation Tweak  -  Disable Troop Donations[/b]  -Disables your clan (and optionally kingdom) parties from donating troops to owned settlements.
+
+[b][*]Settlement Tweaks/Disable Troop Donation Tweak  -  Disable Troop Donations - Apply to Faction[/b]  -Extends disabling of troop donations to owned settlements to your entire kingdom.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Training Fields Tweak  -  Enable Castle Training Fields Tweak[/b]  -Changes the amount of experience the training fields provides for each level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Training Fields Tweak  -  Castle Training Fields Level 1 Experience[/b]  -Native value is 1. Changes the amount of experience the training fields provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Training Fields Tweak  -  Castle Training Fields Level 2 Experience[/b]  -Native value is 2. Changes the amount of experience the training fields provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Training Fields Tweak  -  Castle Training Fields Level 3 Experience[/b]  -Native value is 3. Changes the amount of experience the training fields provides at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Granary Tweak  -  Enable Castle Granary Tweak[/b]  -Changes the amount of food storage the castle granary provides per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Granary Tweak  -  Castle Granary Food Storage Level 1[/b]  -Native value is 100. Changes the amount of food storage the castle granary provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Granary Tweak  -  Castle Granary Food Storage Level 2[/b]  -Native value is 200. Changes the amount of food storage the castle granary provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Granary Tweak  -  Castle Granary Food Storage Level 3[/b]  -Native value is 300. Changes the amount of food storage the castle granary provides at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Gardens Tweak  -  Enable Castle Gardens Tweak[/b]  -Changes the amount of food the castle gardens produce per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Gardens Tweak  -  Castle Garden Food Production Level 1[/b]  -Native value is 5. Changes the amount of food the castle gardens produce at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Gardens Tweak  -  Castle Garden Food Production Level 2[/b]  -Native value is 10. Changes the amount of food the castle gardens produce at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Gardens Tweak  -  Castle Garden Food Production Level 3[/b]  -Native value is 15. Changes the amount of food the castle gardens produce at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Militia Barracks Tweak  -  Enable Castle Militia Barracks Tweak[/b]  -Changes the militia production that the castle militia barracks provides per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Militia Barracks Tweak  -  Castle Militia Barracks Production Level 1[/b]  -Native value is 1. Changes the militia production that the castle militia barracks provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Militia Barracks Tweak  -  Castle Militia Barracks Production Level 2[/b]  -Native value is 2. Changes the militia production that the castle militia barracks provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Castle Buildings Tweaks/Castle Militia Barracks Tweak  -  Castle Militia Barracks Production Level 3[/b]  -Native value is 3. Changes the militia production that the castle militia barracks provides at level 3.
+
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Training Fields Tweak  -  Enable Town Training Fields Tweak[/b]  -Changes the amount of experience the training fields provides for each level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Training Fields Tweak  -  Town Training Fields Level 1 Experience[/b]  -Native value is 30. Changes the amount of experience the training fields provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Training Fields Tweak  -  Town Training Fields Level 2 Experience[/b]  -Native value is 60. Changes the amount of experience the training fields provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Training Fields Tweak  -  Town Training Fields Level 3 Experience[/b]  -Native value is 100. Changes the amount of experience the training fields provides at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Granary Tweak  -  Enable Town Granary Tweak[/b]  -Changes the amount of food storage the town granary provides per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Granary Tweak  -  Town Granary Food Storage Level 1[/b]  -Native value is 200. Changes the amount of food storage the town granary provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Granary Tweak  -  Town Granary Food Storage Level 2[/b]  -Native value is 400. Changes the amount of food storage the town granary provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Granary Tweak  -  Town Granary Food Storage Level 3[/b]  -Native value is 600. Changes the amount of food storage the town granary provides at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Orchards Tweak  -  Enable Town Orchards Tweak[/b]  -Changes the amount of food the town orchards produce per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Orchards Tweak  -  Town Orchard Food Production Level 1[/b]  -Native value is 10. Changes the amount of food the town orchards produce at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Orchards Tweak  -  Town Orchard Food Production Level 2[/b]  -Native value is 20. Changes the amount of food the town orchards produce at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Orchards Tweak  -  Town Orchard Food Production Level 3[/b]  -Native value is 30. Changes the amount of food the town orchards produce at level 3.
+
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Militia Barracks Tweak  -  Enable Town Militia Barracks Tweak[/b]  -Changes the militia production that the town militia barracks provides per level.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Militia Barracks Tweak  -  Town Militia Barracks Production Level 1[/b]  -Native value is .5. Changes the militia production that the town militia barracks provides at level 1.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Militia Barracks Tweak  -  Town Militia Barracks Production Level 2[/b]  -Native value is 1. Changes the militia production that the town militia barracks provides at level 2.
+
+[b][*]Settlement Tweaks/Buildings Tweaks/Town Buildings Tweaks/Town Militia Barracks Tweak  -  Town Militia Barracks Production Level 3[/b]  -Native value is 1.5. Changes the militia production that the town militia barracks provides at level 3.
+
+
+
+[b][*]Settlement Tweaks/Settlement Food Bonus  -  Enabled Settlement Food Bonus Tweaks[/b]  -Enables tweaks which provide bonuses to food production in towns and castles.
+
+[b][*]Settlement Tweaks/Settlement Food Bonus  -  Castle Food Bonus[/b]  -Native value is 0. Provides a bonus to food production in castles.
+
+[b][*]Settlement Tweaks/Settlement Food Bonus  -  Town Food Bonus[/b]  -Native value is 0. Provides a bonus to food production in towns.
+
+[b][*]Settlement Tweaks/Settlement Food Bonus/Food Loss from Prosperity Tweak  -  Enable Food Loss From Prosperity Tweak[/b]  -Allows you to adjust the loss to food production received from settlement prosperity.
+
+[b][*]Settlement Tweaks/Settlement Food Bonus/Food Loss from Prosperity Tweak  -  Prosperity Food Loss Divisor[/b]  -Native value is 50. The prosperity of the settlement is divided by this value to calculate the loss. Increasing this value will decrease the amount of food lost.
+
+
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus  -  Enable Settlement Militia Bonus[/b]  -Grants a bonus to militia growth in towns and castles.
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus  -  Castle Militia Growth Bonus[/b]  -Native value is 0. Grants a bonus to militia growth in castles.
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus  -  Town Militia Growth Bonus[/b]  -Native value is 0. Grants a bonus to militia growth in towns.
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus/Elite Militia Bonus  -  Enable Militia Elite Spawn Bonus[/b]  -Adds a bonus to the chance that militia spawning in towns and castles are elite.
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus/Elite Militia Bonus  -  Elite Melee Militia Spawn Bonus[/b]  -Native value is 0. Adds a bonus to the change the militia spawning in towns and castles are elite melee troops.
+
+[b][*]Settlement Tweaks/Settlement Militia Bonus/Elite Militia Bonus  -  Elite Ranged Militia Spawn Bonus[/b]  -Native value is 0. Adds a bonus to the change the militia spawning in towns and castles are elite ranged troops.
+
+
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Renown Reward Tweak  -  Enable Tournament Renown Tweak[/b]  -Sets the amount of renown awarded when you win a tournament.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Renown Reward Tweak  -  Tournament Renown Reward[/b]  -Native value is 3. Increases the amount of renown awarded when you win a tournament.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Gold Reward Tweak  -  Enable Tournament Gold Reward Tweak[/b]  -Adds the set amount of gold to the rewards when you win a tournament.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Gold Reward Tweak  -  Tournament Gold Reward[/b]  -Native value is 0. Adds the set amount of gold to the rewards when you win a tournament.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Maximum Bet Amount Tweak  -  Enable Tournament Max Bet Tweak[/b]  -Sets the maximum amount of gold that you can bet per round in tournaments.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Maximum Bet Amount Tweak  -  Tournament Maximum Bet Amount[/b]  -Native value is 150. Sets the maximum amount of gold that you can bet per round in tournaments.
+
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Tournament Hero Experience Multiplier  -  Enable Tournament Hero Experience Multiplier Override[/b]  -Overrides the native multiplier value for experience gain in tournaments for hero characters.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Tournament Hero Experience Multiplier  -  Tournament Hero Experience Multiplier[/b]  -Native value is 0.25. Sets the multiplier applied to experience gained in tournaments by hero characters. .25 = 1/4 normal experience, 1 = full real-world experience, 2 = 2x real-world experience.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Arena Hero Experience Multiplier  -  Enable Arena Hero Experience Multiplier Override[/b]  -Overrides the native multiplier value for experience gain in arena fights for hero characters. .25 = 1/4 normal experience, 1 = full real-world experience, 2 = 2x real-world experience.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Arena Hero Experience Multiplier  -  Arena Hero Experience Multiplier[/b]  -Native value is 0.06. Overrides the native multiplier for experience gain in arena fights for hero characters.
+
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Minimum Betting Odds  -  Enabled Minimum Betting Odds Tweak[/b]  -Allows you to set the minimum betting odds in tournaments.
+
+[b][*]Settlement Tweaks/Tournament Tweaks/Minimum Betting Odds  -  Minimum Betting Odds[/b]  -Native: 1.1. The minimum odds for tournament bets.
+
+[b][*]Settlement Tweaks/Workshop Tweaks/Workshop Limit Tweak  -  Enable Max Workshop Limit Tweak[/b]  -Sets the base maximum number of workshops you can have and the limit increase gained per clan tier.
+
+[b][*]Settlement Tweaks/Workshop Tweaks/Workshop Limit Tweak  -  Base Workshop Limit[/b]  -Native value is 1. Sets the base maximum number of workshops you can have.
+
+[b][*]Settlement Tweaks/Workshop Tweaks/Workshop Limit Tweak  -  Bonus Workshops Per Clan Tier[/b]  -Sets the base maximum number of workshops you can have and the limit increase gained per clan tier.
+
+[b][*]Settlement Tweaks/Workshop Tweaks/Workshop Cost Tweak  -  Enable Workshop Cost Tweak[/b]  -Sets the base value used to calculate the cost of workshops. Reduce to reduce cost of workshops.
+
+[b][*]Settlement Tweaks/Workshop Tweaks/Workshop Cost Tweak  -  Workshop Base Cost[/b]  -Native value is 10,000. Sets the base value used to calculate the cost of workshops. Reduce to reduce cost of workshops.
+[/list]
+
+

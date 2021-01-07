@@ -73,6 +73,7 @@
     <None Remove="_Module\body_armors.xml" />
     <None Remove="_Module\head_armors.xml" />
     <None Remove="_Module\leg_armors.xml" />
+    <None Remove="_Module\Settings.txt" />
     <None Remove="_Module\weapons.xml" />
   </ItemGroup>
   

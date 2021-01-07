@@ -24,7 +24,7 @@ namespace BannerlordTweaks
         public bool RemoteCompanionSkillManagementEnabled { get; set; } = true;
         */
 
-        [SettingPropertyBool("Enable Auto-Extenson of 'Stop the Conspiracy' Quest Timer", Order = 4, RequireRestart = false, HintText = "Automatically extends the timer of the 'Stop the Conspiracy' quest as TW hasn't finished it yet.")]
+        [SettingPropertyBool("Enable Auto-Extension of the 'Stop the Conspiracy' Quest", Order = 4, RequireRestart = false, HintText = "Automatically extends the timer of the 'Stop the Conspiracy' quest as TW hasn't finished it yet.")]
         public bool TweakedConspiracyQuestTimerEnabled { get; set; } = true;
 
         #endregion
@@ -127,7 +127,7 @@ namespace BannerlordTweaks
         [SettingPropertyInteger("Siege Collateral Damage Casualties", 1, 3, HintText = "Native value is 2.0. Changes the value used to calculate collateral casualties during the campaign map siege stage."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
         public int SiegeCollateralDamageCasualties { get; set; } = 1;
 
-        [SettingPropertyInteger("Siege Destruction Casualties", 3, 7, HintText = "Native value is 5.0. Changes the value used to calculate desctruction casualties during the campaign map siege stage."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
+        [SettingPropertyInteger("Siege Destruction Casualties", 3, 7, HintText = "Native value is 5.0. Changes the value used to calculate destruction casualties during the campaign map siege stage."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
         public int SiegeDestructionCasualties { get; set; } = 4;
 
         #endregion
@@ -160,7 +160,7 @@ namespace BannerlordTweaks
 
         #region Character Tweaks - Age Tweaks
 
-        [SettingPropertyBool("Enable Age Tweaks", RequireRestart = false, IsToggle = true, HintText = "Enables the tweaking of character age behaviour."), SettingPropertyGroup("Character Tweaks/Age Tweaks")]
+        [SettingPropertyBool("Enable Age Tweaks", RequireRestart = false, IsToggle = true, HintText = "Enables the tweaking of character age behavior."), SettingPropertyGroup("Character Tweaks/Age Tweaks")]
         public bool AgeTweaksEnabled { get; set; } = false;
 
         [SettingPropertyInteger("Become Infant Age", 0, 125, HintText = "Native: 3. Must be less than Become Child Age.", Order = 1), SettingPropertyGroup("Character Tweaks/Age Tweaks")]

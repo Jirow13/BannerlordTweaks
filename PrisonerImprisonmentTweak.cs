@@ -65,7 +65,7 @@ namespace BannerlordTweaks
 
         public static void DailyTick()
         {
-            DebugHelpers.DebugMessage("Respawn Fix : Triggered Daily Tick");
+            //DebugHelpers.DebugMessage("Respawn Fix : Triggered Daily Tick");
             foreach (Hero hero in Hero.All)
             {
                 if (hero == null) return;
@@ -81,7 +81,7 @@ namespace BannerlordTweaks
                         EndCaptivityAction.ApplyByReleasing(hero);
                     }
 
-                    DebugHelpers.DebugMessage("Tracking Hero for possible bug: " + hero.Name + " | State: " + heroState + " | Loc: " + hero.LastSeenPlace + " | Captivity days: " + (int)days);
+                    //DebugHelpers.DebugMessage("Tracking Hero for possible bug: " + hero.Name + " | State: " + heroState + " | Loc: " + hero.LastSeenPlace + " | Captivity days: " + (int)days);
                 }
             }
         }
