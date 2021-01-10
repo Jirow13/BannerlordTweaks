@@ -20,7 +20,7 @@ namespace BannerlordTweaks.Patches
                   (settings.PrisonerConformityTweaksApplyToAi))
                 {
                     num = __result * (1 + settings.PrisonerConformityTweakBonus);
-                    party.MobileParty.EffectiveQuartermaster.AddSkillXp(DefaultSkills.Charm, (num/10));
+                    party.MobileParty.EffectiveQuartermaster.AddSkillXp(DefaultSkills.Charm, (num * .05f));
                     __result = MBMath.Round(num);
                 }
             }
