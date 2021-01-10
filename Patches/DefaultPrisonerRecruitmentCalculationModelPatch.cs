@@ -14,7 +14,7 @@ namespace BannerlordTweaks.Patches
          {
             if (BannerlordTweaksSettings.Instance is { } settings && settings.PrisonerConformityTweaksEnabled && party.LeaderHero is not null)
             {
-                float num = 0;
+                float num;
                 if (party.LeaderHero == Hero.MainHero ||
                   (party.Owner is not null && party.Owner.Clan == Hero.MainHero.Clan && settings.PrisonerConformityTweaksApplyToClan) ||
                   (settings.PrisonerConformityTweaksApplyToAi))

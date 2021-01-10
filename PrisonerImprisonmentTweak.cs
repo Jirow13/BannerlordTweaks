@@ -71,7 +71,7 @@ namespace BannerlordTweaks
                 if (hero == null) return;
                 if (hero.PartyBelongedToAsPrisoner == null && hero.IsPrisoner && hero.IsAlive && !hero.IsActive && !hero.IsNotSpawned && !hero.IsReleased)
                 {
-                    Hero.CharacterStates heroState = hero.HeroState;
+                    //Hero.CharacterStates heroState = hero.HeroState;
 
                     float days = hero.CaptivityStartTime.ElapsedDaysUntilNow;
                     if ( BannerlordTweaksSettings.Instance is { } settings && (days > (settings.MinimumDaysOfImprisonment + 3)) )
