@@ -17,19 +17,22 @@ namespace BannerlordTweaks.Patches
     {
         static void Postfix(ref int __result, IFaction factionForEvaluation)
         {
-            if (BannerlordTweaksSettings.Instance is null) return;
+            if (!(BannerlordTweaksSettings.Instance is { } settings)) return;
 
             Hero leader = factionForEvaluation.Leader;
 
             // Don't let Faction Leaders Defect from their Own Factions
             if (leader == null || leader.IsFactionLeader) return;
 
-            int num = BannerlordTweaksSettings.Instance.BarterablesJoinKingdomAsClanAdjustment;
-            if (BannerlordTweaksSettings.Instance.BarterablesTweaksEnabled)
+            int num = settings.BarterablesJoinKingdomAsClanAdjustment;
+            if (settings.BarterablesTweaksEnabled)
             {
-                __result = (int)__result * num;
+                double percent = (double)(num) / 100;
+                double cost = __result * percent;
+                //cost = Math.Abs(__result * (double)((num) / 100));
+                __result = (int)Math.Round(cost);
             }
-            if (BannerlordTweaksSettings.Instance.BarterablesJoinKingdomAsClanAltFormulaEnabled)
+            if (settings.BarterablesJoinKingdomAsClanAltFormulaEnabled)
             {
                 //int original_result = __result;
                 __result /= 10;

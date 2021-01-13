@@ -102,7 +102,7 @@ namespace BannerlordTweaks.Patches
             if (!(BannerlordTweaksSettings.Instance is { } settings))
                 return 0;
 
-
+            /*
             switch (skillname)
             {
                 case "Engineering":
@@ -122,8 +122,19 @@ namespace BannerlordTweaks.Patches
                 default:
                     //DebugHelpers.DebugMessage("GetPerSkillBonus did not find the skill: " + skillname);
                     return xpamount;
+            */
 
-            }
+            return skillname switch
+            {
+                "Engineering" => (newxpamount * settings.SkillBonusEngineering),
+                "Leadership" => (newxpamount * settings.SkillBonusLeadership),
+                "Medicine" => (newxpamount * settings.SkillBonusMedicine),
+                "Riding" => (newxpamount * settings.SkillBonusRiding),
+                "Roguery" => (newxpamount * settings.SkillBonusRoguery),
+                "Scouting" => (newxpamount * settings.SkillBonusScouting),
+                "Trade" => (newxpamount * settings.SkillBonusTrade),
+                _ => xpamount,
+            };
         }
     }
 }
