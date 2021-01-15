@@ -15,16 +15,21 @@ namespace BannerlordTweaks.Patches
     [HarmonyPatch(typeof(JoinKingdomAsClanBarterable), "GetUnitValueForFaction")]
     public class BarterablePatches
     {
-        static void Postfix(ref int __result, IFaction factionForEvaluation)
-        {
+        static void Postfix(ref int __result, IFaction factionForEvaluation, Kingdom ___TargetKingdom)
+          {
             if (!(BannerlordTweaksSettings.Instance is { } settings)) return;
 
-            Hero leader = factionForEvaluation.Leader;
+            Hero factionLeader = factionForEvaluation.Leader;
+
+            // Only proceed if the main hero is involved and it's not intra-faction barter.
+            if (___TargetKingdom.MapFaction == factionForEvaluation.MapFaction || ___TargetKingdom.MapFaction != Hero.MainHero.MapFaction || ___TargetKingdom.Leader != Hero.MainHero) return;
+
 
             // Don't let Faction Leaders Defect from their Own Factions
-            if (leader == null || leader.IsFactionLeader) return;
+            if (factionLeader == null || factionLeader.IsFactionLeader) return;
 
             int num = settings.BarterablesJoinKingdomAsClanAdjustment;
+            
             if (settings.BarterablesTweaksEnabled)
             {
                 double percent = (double)(num) / 100;
@@ -32,12 +37,13 @@ namespace BannerlordTweaks.Patches
                 //cost = Math.Abs(__result * (double)((num) / 100));
                 __result = (int)Math.Round(cost);
             }
+
             if (settings.BarterablesJoinKingdomAsClanAltFormulaEnabled)
             {
                 //int original_result = __result;
                 __result /= 10;
 
-                int relations = Hero.MainHero.GetRelation(leader);
+                int relations = Hero.MainHero.GetRelation(factionLeader);
                 if (relations > 100) relations = 99;
 
                 double percent = Math.Abs(((double)(relations) / 100) - 1);
