@@ -12,7 +12,7 @@ namespace BannerlordTweaks.Patches
 {
 
     [HarmonyPatch(typeof(MissionAgentSpawnLogic), MethodType.Constructor, new Type[] { typeof(IMissionTroopSupplier[]), typeof(BattleSideEnum) })]
-    public class TweakedBattleSizePiatch
+    public class TweakedBattleSizePatch
     {
         static void Postfix(MissionAgentSpawnLogic __instance, ref int ____battleSize)
         {

@@ -56,8 +56,9 @@ namespace BannerlordTweaks
                     gameStarter.AddModel(new TweakedClanTierModel());
                 if (settings.SettlementMilitiaBonusEnabled)
                     gameStarter.AddModel(new TweakedSettlementMilitiaModel());
-                if (settings.SettlementFoodBonusEnabled)
-                    gameStarter.AddModel(new TweakedSettlementFoodModel());
+                // Changed to Patch in 1.5.7
+                //if (settings.SettlementFoodBonusEnabled)
+                //    gameStarter.AddModel(new TweakedSettlementFoodModel());
                 if (settings.SiegeCasualtiesTweakEnabled || settings.SiegeConstructionProgressPerDayMultiplierEnabled)
                     gameStarter.AddModel(new TweakedSiegeEventModel());
                 if (settings.NoStillbirthsTweakEnabled || settings.NoMaternalMortalityTweakEnabled ||

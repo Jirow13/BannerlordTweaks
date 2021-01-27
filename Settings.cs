@@ -117,7 +117,7 @@ namespace BannerlordTweaks
         [SettingPropertyBool("Enable Siege Construction Progress Tweak", Order = 1, RequireRestart = false, IsToggle = true, HintText = "Adds a multiplier to the construction progress per day for sieges."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Construction Progress Tweak")]
         public bool SiegeConstructionProgressPerDayMultiplierEnabled { get; set; } = true;
 
-        [SettingPropertyFloatingInteger("Siege Construction Progress Per Day Multiplier", 0.5f, 10.0f, HintText = "Native value is 1.0. Adds a multiplier to the construction progress per day for sieges. A smaller number results in longer siege times."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Construction Progress Tweak")]
+        [SettingPropertyFloatingInteger("Siege Construction Progress Per Day Multiplier", 0.5f, 10.0f, HintText = "Native value is 2.0, modifief by Empire Construction Bonus and/or Engineering Siege Engine Production bonus. This tweak adds a multiplier to the construction progress per day for sieges. A smaller number results in longer siege times."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Construction Progress Tweak")]
         public float SiegeConstructionProgressPerDayMultiplier { get; set; } = 0.8f;
 
 
@@ -127,8 +127,8 @@ namespace BannerlordTweaks
         [SettingPropertyInteger("Siege Collateral Damage Casualties", 1, 3, HintText = "Native value is 2.0. Changes the value used to calculate collateral casualties during the campaign map siege stage."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
         public int SiegeCollateralDamageCasualties { get; set; } = 1;
 
-        [SettingPropertyInteger("Siege Destruction Casualties", 3, 7, HintText = "Native value is 5.0. Changes the value used to calculate destruction casualties during the campaign map siege stage."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
-        public int SiegeDestructionCasualties { get; set; } = 4;
+        [SettingPropertyInteger("Siege Destruction Casualties", 0, 10, HintText = "Native value is 1, modified by the Crossbow 'Terror' perk (if you have it). This tweak adds to that base value used to calculate destruction casualties during the campaign map siege stage. 0 = No change. 1 = 1 + native value, etc."), SettingPropertyGroup("Battle Tweaks/Siege Tweaks/Casualties Tweaks")]
+        public int SiegeDestructionCasualties { get; set; } = 0;
 
         #endregion
 

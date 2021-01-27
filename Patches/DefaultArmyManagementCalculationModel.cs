@@ -11,42 +11,15 @@ using TaleWorlds.CampaignSystem.SandBox.GameComponents.Map;
 namespace BannerlordTweaks.Patches
 {
 
-    /* Option to run it as a replacement model
-    public class TweakedDefaultArmyManagementCalculationModel : DefaultArmyManagementCalculationModel
-    {
-        public override float CalculateCohesionChange(Army army, StatExplainer? explanation = null)
-        {
-            int num1 = 0;
-            ExplainedNumber explainedNumber = new ExplainedNumber(-2f, explanation, null);
-
-            foreach (MobileParty party in army.Parties)
-            {
-                if (party.LeaderHero.Clan != army.LeaderParty.LeaderHero.Clan)
-                {
-                    num1++;
-                }
-            }
-            
-            if (num1 > 0)
-            {
-                // make this a reflection call
-                typeof(DefaultArmyManagementCalculationModel).GetMethod("CalculateCohesionChangeInternal", BindingFlags.Instance | BindingFlags.NonPublic).Invoke(this, new object[] { army, explainedNumber });
-                //base.CalculateCohesionChangeInternal(army, ref explainedNumber);
-            }
-            else
-            {
-                explainedNumber.Add(2f, new TextObject("Clan-Only Armies Suffer No Cohesion Loss"), null);
-            }
-            return explainedNumber.ResultNumber;
-        }
-    }
+    /* 
+     ExplainedNumber seems to have changed in 1.5.7. And ExplainedNumber.StatExplainer does not seem to be usable as a param anymore.
     */
-
     [HarmonyPatch(typeof(DefaultArmyManagementCalculationModel), "CalculateCohesionChange")]
     public class CalculateCohesionChangePatch
     {
 
-        static bool Prefix(Army army, ref float __result, StatExplainer? explanation = null)
+        //static bool Prefix(Army army, ref float __result, StatExplainer? explanation = null)
+        static bool Prefix(Army army, bool includeDescriptions, ref ExplainedNumber __result)
         {
             int num1 = 0;
             foreach (MobileParty party in army.Parties)
@@ -62,10 +35,10 @@ namespace BannerlordTweaks.Patches
             }
             else
             {
-                if (explanation is null) explanation = new StatExplainer();
-                explanation.AddLine("Clan-Only Armies Suffer No Cohesion Loss", 0);
-                ExplainedNumber explainedNumber = new ExplainedNumber(0f, explanation);
-                __result = explainedNumber.ResultNumber;
+                //if (result is null) result = new ExplainedNumber(-2f, true, null);
+                __result.Add(2, new TextObject("Clan-Only Armies Suffer No Cohesion Loss"));
+                //ExplainedNumber explainedNumber = new ExplainedNumber(0f, explanation);
+                //result = explainedNumber.ResultNumber;
                 return false;
             }
         }

@@ -8,8 +8,8 @@
     <ModuleName>zz$(AssemblyName)</ModuleName>
 	<!-- Set as Machine Env Variable, or define in line below -->
 	<!-- <BL_GAME_DIR>Define Path Here</BL_GAME_DIR> -->
-    <!-- <GameFolder>$(BL_GAME_DIR)</GameFolder> -->
-	<GameFolder>$(BL_GAME_DIR_GOG)</GameFolder> 
+    <GameFolder>$(BL_GAME_DIR)</GameFolder>
+	<!-- <GameFolder>$(BL_GAME_DIR_GOG)</GameFolder> -->
     <Authors>Jiros</Authors>
   </PropertyGroup>
 
@@ -24,47 +24,50 @@
     <Optimize>false</Optimize>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="mscorlib" />
-    <Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <!-- Bannerlord Native Assemblies -->
-    <Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll">
-      <HintPath>%(Identity)</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
-      <HintPath>%(Identity)</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="$(GameFolder)\Modules\SandBox\bin\Win64_Shipping_Client\*.dll">
-      <HintPath>%(Identity)</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="$(GameFolder)\Modules\SandBoxCore\bin\Win64_Shipping_Client\*.dll">
-      <HintPath>%(Identity)</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="$(GameFolder)\Modules\StoryMode\bin\Win64_Shipping_Client\*.dll">
-      <HintPath>%(Identity)</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
+	<ItemGroup>
+		<Reference Include="mscorlib" />
+		<Reference Include="System.Runtime.InteropServices.RuntimeInformation" />
+		<Reference Include="System.Windows.Forms" />
+		<Reference Include="System" />
+		<Reference Include="System.Core" />
+		<Reference Include="System.Data" />
+		<Reference Include="System.Xml" />
+		<!-- Bannerlord Native Assemblies -->
+		<Reference Include="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.*.dll" Exclude="$(GameFolder)\bin\Win64_Shipping_Client\TaleWorlds.Native.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<!-- Bannerlord Module Assemblies  -->
+		<Reference Include="$(GameFolder)\Modules\Native\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\SandBox\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\SandBoxCore\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="$(GameFolder)\Modules\StoryMode\bin\Win64_Shipping_Client\*.dll">
+			<HintPath>%(Identity)</HintPath>
+			<Private>False</Private>
+		</Reference>
+	</ItemGroup>
 
   <ItemGroup>
     <Compile Remove="DismembermentMissionBehaviour.cs" />
     <Compile Remove="Patches\CampaignUIHelperPatch.cs" />
     <Compile Remove="Patches\CharacterAttributeItemVMPatch.cs" />
+    <Compile Remove="Patches\CharacterVMPatch-Retired.cs" />
     <Compile Remove="Patches\CharacterVMPatch.cs" />
     <Compile Remove="Patches\DefaultTroopCountLimitModelPatch.cs" />
     <Compile Remove="Patches\HearthLevelPatch-WIP.cs" />
     <Compile Remove="Patches\MapVMPatches.cs" />
     <Compile Remove="Patches\SkillVMPatch.cs" />
     <Compile Remove="Properties\AssemblyInfo.cs" />
+    <Compile Remove="TweakedSettlementFoodModel.cs" />
   </ItemGroup>
 
   <ItemGroup>
@@ -78,14 +81,14 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Bannerlord.BuildResources" Version="1.0.0.32">
+    <PackageReference Include="Bannerlord.BuildResources" Version="1.0.0.33">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Lib.Harmony" Version="2.0.4" IncludeAssets="compile" />
-    <PackageReference Include="Bannerlord.ButterLib" Version="1.0.18" IncludeAssets="compile" />
-    <PackageReference Include="Bannerlord.UIExtenderEx" Version="1.0.5" IncludeAssets="compile" />
-    <PackageReference Include="Bannerlord.MCM" Version="4.1.2" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.ButterLib" Version="1.0.20" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.UIExtenderEx" Version="2.0.0" IncludeAssets="compile" />
+    <PackageReference Include="Bannerlord.MCM" Version="4.1.2.6" IncludeAssets="compile" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" PrivateAssets="All" />
   </ItemGroup>
 

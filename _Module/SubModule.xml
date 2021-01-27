@@ -2,7 +2,7 @@
 <Module>
 	<Name value="Bannerlord Tweaks"/>
 	<Id value="zzBannerlordTweaks"/>
-	<Version value="v1.5.6.7"/>
+	<Version value="v1.5.7.0"/>
 	<DefaultModule value="false"/>
 	<SingleplayerModule value="true"/>
 	<MultiplayerModule value="false"/>
@@ -26,11 +26,11 @@
 		<DependedModuleMetadata id="Bannerlord.MBOptionScreen" order="LoadBeforeThis" version="v4.1.1" />
 		<DependedModuleMetadata id="Bannerlord.MBOptionScreen.MBO" incompatible="true" />
 
-		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="e1.5.6.*" />
-		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="e1.5.6.*" />
-		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="e1.5.6.*" />
-		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="e1.5.6.*" optional="true" />
-		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="e1.5.6.*" optional="true" />
+		<DependedModuleMetadata id="Native" order="LoadBeforeThis" version="e1.5.7.*" />
+		<DependedModuleMetadata id="SandBoxCore" order="LoadBeforeThis" version="e1.5.7.*" />
+		<DependedModuleMetadata id="Sandbox" order="LoadBeforeThis" version="e1.5.7.*" />
+		<DependedModuleMetadata id="StoryMode" order="LoadBeforeThis" version="e1.5.7.*" optional="true" />
+		<DependedModuleMetadata id="CustomBattle" order="LoadBeforeThis" version="e1.5.7.*" optional="true" />
 	</DependedModuleMetadatas>
 	<SubModules>
 		<SubModule>
