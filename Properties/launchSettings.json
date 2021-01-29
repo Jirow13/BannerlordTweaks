@@ -3,7 +3,7 @@
     "Bannerlord": {
       "commandName": "Executable",
       "executablePath": "$(GameFolder)\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
-      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*BetterExceptionWindow*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Bannerlord.MBOptionScreen.MCMv3*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*Aragas.AltSaveMissingModuleFix*CombatBandage*CraftedItemCopyright*CurryFavorByKillingBandits*CustomSpawns*DeveloperConsole*EconomyTweak_h*ExitSettlement*ExtendedFamily*HeroesMustDie*HousesCalradia*ImprovedGarrisons*InterestingClans*InterestingCompanions*KaosesPartySizes*KillBanditsRaiseRelations*LordRetinueUptier*MCTRDecayedisRevived*ManageRemoteCompanions*NobleNobles*Pacemaker*PartyAIOverhaulCommandsCont*PartyScreenEnhancements*PowerToTheNotables*QuickStart*RealisticBattleCombatModule*SpecialLoot*TMCompanions*TrueRelations*UsefullCompanions*VsRoyalArmoryRewritten*csx*swadian armoury*zzBannerlordTweaks*_MODULES_",
+      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*BetterExceptionWindow*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Bannerlord.MBOptionScreen.MCMv3*Bannerlord.MBOptionScreen.ModLib*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*ManageRemoteCompanions*PartyAIOverhaulCommandsCont*zzBannerlordTweaks*_MODULES_",
       "workingDirectory": "$(GameFolder)\\bin\\Win64_Shipping_Client",
       "sqlDebugging": true
     }

@@ -51,7 +51,7 @@ namespace BannerlordTweaks.Patches
             int num1 = 0;
             foreach (MobileParty party in army.Parties)
             {
-                if (party.LeaderHero.Clan != army.LeaderParty.LeaderHero.Clan)
+                if (party.LeaderHero is not null && party.LeaderHero.Clan != army.LeaderParty.LeaderHero.Clan)
                 {
                     num1++;
                 }
