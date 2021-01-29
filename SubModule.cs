@@ -107,8 +107,9 @@ namespace BannerlordTweaks
                     PrisonerImprisonmentTweak.Apply(Campaign.Current);
                 if (settings.DailyTroopExperienceTweakEnabled)
                     DailyTroopExperienceTweak.Apply(Campaign.Current);
-                if (settings.TweakedConspiracyQuestTimerEnabled)
-                    ConspiracyQuestTimerTweak.Apply(Campaign.Current);
+                // 1.5.7.2 - Disable until we understand main quest changes.
+                //if (settings.TweakedConspiracyQuestTimerEnabled)
+                //    ConspiracyQuestTimerTweak.Apply(Campaign.Current);
             }
             return base.DoLoading(game);
         }

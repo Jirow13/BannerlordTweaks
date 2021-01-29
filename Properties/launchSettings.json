@@ -3,9 +3,9 @@
     "Bannerlord": {
       "commandName": "Executable",
       "executablePath": "$(GameFolder)\\bin\\Win64_Shipping_Client\\Bannerlord.exe",
-      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*BetterExceptionWindow*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Bannerlord.MBOptionScreen.MCMv3*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*csx*CombatBandage*DeveloperConsole*HousesCalradia*ImprovedGarrisons*InterestingCompanions*Pacemaker*PartyScreenEnhancements*PowerToTheNotables*RealisticBattleAiModule*SpecialLoot*UsefullCompanions*swadian armoury*zCulturedStart*zzBannerlordTweaks*_MODULES_",
+      "commandLineArgs": "/singleplayer _MODULES_*Bannerlord.Harmony*BetterExceptionWindow*csx*Bannerlord.ButterLib*Bannerlord.UIExtenderEx*Bannerlord.MBOptionScreen*Bannerlord.MBOptionScreen.MCMv3*Bannerlord.MBOptionScreen.ModLib*Native*SandBoxCore*CustomBattle*Sandbox*StoryMode*DeveloperConsole*KillBanditsRaiseRelations*Pacemaker*PartyScreenEnhancements*zzBannerlordTweaks*zCulturedStart*_MODULES_",
       "workingDirectory": "$(GameFolder)\\bin\\Win64_Shipping_Client",
-      "sqlDebugging": true
+      "sqlDebugging": false
     }
   }
 }

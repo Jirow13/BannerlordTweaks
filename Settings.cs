@@ -24,8 +24,10 @@ namespace BannerlordTweaks
         public bool RemoteCompanionSkillManagementEnabled { get; set; } = true;
         */
 
+        /* Disable in 1.5.7.2 until we understand changes to the main quest.
         [SettingPropertyBool("Enable Auto-Extension of the 'Stop the Conspiracy' Quest", Order = 4, RequireRestart = false, HintText = "Automatically extends the timer of the 'Stop the Conspiracy' quest as TW hasn't finished it yet.")]
         public bool TweakedConspiracyQuestTimerEnabled { get; set; } = true;
+        */
 
         #endregion
 
@@ -676,7 +678,7 @@ namespace BannerlordTweaks
         [SettingPropertyBool("Enable Tournament Hero Experience Multiplier Override", Order = 1, RequireRestart = false, IsToggle = true, HintText = "Overrides the native multiplier value for experience gain in tournaments for hero characters."), SettingPropertyGroup("Settlement Tweaks/Tournament Tweaks/Tournament Hero Experience Multiplier")]
         public bool TournamentHeroExperienceMultiplierEnabled { get; set; } = false;
 
-        [SettingPropertyFloatingInteger("Tournament Hero Experience Multiplier", 0.25f, 2f, HintText = "Native value is 0.25. Sets the multiplier applied to experience gained in tournaments by hero characters. .25 = 1/4 normal experience, 1 = full real-world experience, 2 = 2x real-world experience."), SettingPropertyGroup("Settlement Tweaks/Tournament Tweaks/Tournament Hero Experience Multiplier")]
+        [SettingPropertyFloatingInteger("Tournament Hero Experience Multiplier", 0.25f, 10f, HintText = "Native value is 0.25. Sets the multiplier applied to experience gained in tournaments by hero characters. .25 = 1/4 normal experience, 1 = full real-world experience, 2 = 2x real-world experience."), SettingPropertyGroup("Settlement Tweaks/Tournament Tweaks/Tournament Hero Experience Multiplier")]
         public float TournamentHeroExperienceMultiplier { get; set; } = 0.25f;
 
         [SettingPropertyBool("Enable Arena Hero Experience Multiplier Override", Order = 1, RequireRestart = false, IsToggle = true, HintText = "Overrides the native multiplier value for experience gain in arena fights for hero characters. .25 = 1/4 normal experience, 1 = full real-world experience, 2 = 2x real-world experience."), SettingPropertyGroup("Settlement Tweaks/Tournament Tweaks/Arena Hero Experience Multiplier")]

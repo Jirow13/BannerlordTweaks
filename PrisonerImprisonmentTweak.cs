@@ -25,7 +25,7 @@ namespace BannerlordTweaks
          {
             if (escapeBehaviour == null || !(BannerlordTweaksSettings.Instance is { } settings) || !hero.IsPrisoner) return;
 
-            if (hero.PartyBelongedToAsPrisoner != null && hero.PartyBelongedToAsPrisoner.MapFaction != null)
+            if (hero.PartyBelongedToAsPrisoner != null && (hero.PartyBelongedToAsPrisoner.MapFaction != null || hero.PartyBelongedToAsPrisoner.LeaderHero?.Clan == Hero.MainHero.Clan))
             {
                 bool flag = hero.PartyBelongedToAsPrisoner.MapFaction == Hero.MainHero.MapFaction || (hero.PartyBelongedToAsPrisoner.IsSettlement && hero.PartyBelongedToAsPrisoner.Settlement.OwnerClan == Clan.PlayerClan);
                 

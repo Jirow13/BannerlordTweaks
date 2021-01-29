@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Version>1.5.6.0</Version>
+    <Version>1.5.7.0</Version>
     <TargetFramework>net472</TargetFramework>
     <Platforms>x64</Platforms>
     <LangVersion>9.0</LangVersion>
@@ -8,8 +8,8 @@
     <ModuleName>zz$(AssemblyName)</ModuleName>
 	<!-- Set as Machine Env Variable, or define in line below -->
 	<!-- <BL_GAME_DIR>Define Path Here</BL_GAME_DIR> -->
-    <GameFolder>$(BL_GAME_DIR)</GameFolder>
-	<!-- <GameFolder>$(BL_GAME_DIR_GOG)</GameFolder> -->
+    <!-- <GameFolder>$(BL_GAME_DIR)</GameFolder> -->
+	<GameFolder>$(BL_GAME_DIR_GOG)</GameFolder>
     <Authors>Jiros</Authors>
   </PropertyGroup>
 
