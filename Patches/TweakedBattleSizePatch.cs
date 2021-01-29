@@ -10,9 +10,29 @@ using TaleWorlds.Core;
 
 namespace BannerlordTweaks.Patches
 {
-
-    [HarmonyPatch(typeof(MissionAgentSpawnLogic), MethodType.Constructor, new Type[] { typeof(IMissionTroopSupplier[]), typeof(BattleSideEnum) })]
+    /*
+    [HarmonyPatch(typeof(BannerlordConfig), "GetRealBattleSize")]
     public class TweakedBattleSizePatch
+    {
+        static void Postfix(ref int __result)
+        {
+
+            if (BannerlordTweaksSettings.Instance is { } settings && settings.BattleSize > 0)
+            {
+                __result = BannerlordTweaksSettings.Instance.BattleSize;
+                //__result = 1000;
+            }
+
+            return;
+        }
+
+        static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.BattleSizeTweakEnabled;
+    }
+    */
+
+    
+    [HarmonyPatch(typeof(MissionAgentSpawnLogic), MethodType.Constructor, new Type[] { typeof(IMissionTroopSupplier[]), typeof(BattleSideEnum) })]
+    public class TweakedBattleSizePatch2
     {
         static void Postfix(MissionAgentSpawnLogic __instance, ref int ____battleSize)
         {
@@ -20,7 +40,8 @@ namespace BannerlordTweaks.Patches
             if (BannerlordTweaksSettings.Instance is { } settings && settings.BattleSize > 0)
             {
                 //DebugHelpers.DebugMessage("MissonAgentSpawnLogic Battle Size Adjustment Triggered");
-                ____battleSize = BannerlordTweaksSettings.Instance.BattleSize;
+                ____battleSize = settings.BattleSize;
+                DebugHelpers.ColorGreenMessage("Max Battle Size Modified to: "+settings.BattleSize);
             }
                         
             return;
@@ -30,6 +51,7 @@ namespace BannerlordTweaks.Patches
     }
     
 
+    /*
     [HarmonyPatch(typeof(BannerlordConfig), "BattleSize", MethodType.Getter)]
 
     public class BattleSizesPatch
@@ -46,4 +68,5 @@ namespace BannerlordTweaks.Patches
 
         static bool Prepare() => BannerlordTweaksSettings.Instance is { } settings && settings.BattleSizeTweakEnabled;
     }
+    */
 }

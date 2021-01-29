@@ -71,7 +71,7 @@ namespace BannerlordTweaks
         [SettingPropertyBool("Battle Size Tweak", Order = 1, IsToggle = true, HintText = "Allows you to set the battle size limit outside of native values. WARNING: Setting this above 1000 can cause performance degradation and crashes."), SettingPropertyGroup("Campaign Tweaks/Battle Size Tweak")]
         public bool BattleSizeTweakEnabled { get; set; } = false;
 
-        [SettingPropertyInteger("Battle Size Limit", 2, 1500, HintText = "Sets the limit for number of troops on a battlefield. WARNING: Setting this above 1000 can cause performance degradation and crashes."), SettingPropertyGroup("Campaign Tweaks/Battle Size Tweak")]
+        [SettingPropertyInteger("Battle Size Limit", 2, 1500, HintText = "Sets the limit for number of troops on a battlefield, ignoring what is in Bannerlord Options. [Options will show whatever setting, but this is the number that will be applied during battles.] WARNING: Setting this above 1000 can cause performance degradation and crashes."), SettingPropertyGroup("Campaign Tweaks/Battle Size Tweak")]
         public int BattleSize { get; set; } = 1000;
 
         #endregion

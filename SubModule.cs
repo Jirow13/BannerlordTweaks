@@ -24,8 +24,12 @@ namespace BannerlordTweaks
                     harmony = new Harmony("mod.bannerlord.tweaks");
                     harmony.PatchAll();
 
-                    if (BannerlordTweaksSettings.Instance is { } settings && settings.BattleSizeTweakEnabled)
-                        BannerlordConfig.BattleSize = settings.BattleSize;
+                    // BattleSize was converted to an array {200, 300, 400, 500, 600, 1000} in 1.5.7. Setting BattleSize to anything outside of those will crash the game.
+                    // Solution is to let BannerlordConfig read a proper setting, then dynamically HarmonyPatch the BattleSize at the time of battle. Players will see 
+                    // the options screen have the setting number, but battles sizes can range to whatever is in BT settings. 
+
+                    //if (BannerlordTweaksSettings.Instance is { } settings && settings.BattleSizeTweakEnabled)
+                    //    BannerlordConfig.BattleSize = settings.BattleSize;
                     DebugHelpers.ColorOrangeMessage("Bannerlord Tweaks Loaded");
                 }
                 catch (Exception ex)

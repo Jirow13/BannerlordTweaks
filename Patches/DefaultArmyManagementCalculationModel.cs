@@ -36,7 +36,7 @@ namespace BannerlordTweaks.Patches
             else
             {
                 //if (result is null) result = new ExplainedNumber(-2f, true, null);
-                __result.Add(2, new TextObject("Clan-Only Armies Suffer No Cohesion Loss"));
+                __result.Add(0, new TextObject("Clan-Only Armies Suffer No Cohesion Loss"));
                 //ExplainedNumber explainedNumber = new ExplainedNumber(0f, explanation);
                 //result = explainedNumber.ResultNumber;
                 return false;
